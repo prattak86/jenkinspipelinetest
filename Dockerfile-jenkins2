@@ -13,7 +13,7 @@ ENV JAVA_OPTS="-Djenkins.install.runSetupWizard=false"
 # Make directory for 'sp_cmdln.zip'
 # Copy file from host dir to '/sp_cmd' filepath on container and unzip
 RUN mkdir sp_cmd
-COPY ~/Devopsadmin/sp_cmdln.zip /sp_cmd
+COPY c/Users/Devopsadmin/sp_cmdln.zip /sp_cmd
 RUN cd sp_cmd
 RUN unzip sp_cmd/sp_cmdln.zip -d sp_cmd
 ENV PATH "$PATH:/sp_cmd"
