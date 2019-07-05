@@ -3,7 +3,7 @@ services:
   jenkins2:
     build:
       dockerfile: Dockerfile-jenkins2
-      context: /Users/Devopsadmin/ogecomjenkinstester/ .
+      context: /Users/Devopsadmin/ogecomjenkinstester/jenkinspipelinetest .
     ports:
       - "8081:8080"
       - "50001:50000"
