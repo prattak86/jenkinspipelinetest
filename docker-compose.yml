@@ -1,0 +1,15 @@
+version: "3.7"
+services:
+  jenkins2:
+    build:
+      dockerfile: Dockerfile-jenkins2
+      context: /Users/Devopsadmin/ogecomjenkinstester/ .
+    ports:
+      - "8081:8080"
+      - "50001:50000"
+    image: jenkinstestimage
+    container_name: jenkins2_envtester
+    volumes:
+      - jenkins_homeTEST:/var/jenkins_home
+volumes:
+    jenkins_homeTEST:
